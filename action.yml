@@ -1,11 +1,12 @@
-name: "Kryptowire Analysis"
-description: "Submit app file to the Kryptowire Portal for analysis"
+name: "CSA Safe App Portal MAST"
+description: "Scan your applications on CSA Safe App Portal's Mobile Application Security Testing Platform, powered by Quokka."
+author: "Quokka"
 inputs:
   path-to-file:
     description: "Path to the artifact file"
     required: true
-  platform:
-    description: "Platform the app belongs to"
+  category:
+    description: "Category the app belongs to - from the following list: ALL, ART_AND_DESIGN, AUTO_AND_VEHICLES, BEAUTY, BOOKS_AND_REFERENCE, BUSINESS, COMICS, COMMUNICATION, DATING, EDUCATION, ENTERTAINMENT, EVENTS, FINANCE, FOOD_AND_DRINK, GAME_ACTION, GAME_ADVENTURE, GAME_ARCADE, GAME_BOARD, GAME_CARD, GAME_CASINO, GAME_CASUAL, GAME_EDUCATIONAL, GAME_MUSIC, GAME_PUZZLE, GAME_RACING, GAME_ROLE_PLAYING, GAME_SIMULATION, GAME_SPORTS, GAME_STRATEGY, GAME_TRIVIA, GAME_WORD, HEALTH_AND_FITNESS, HOUSE_AND_HOME, LIBRARIES_AND_DEMO, LIFESTYLE, MAPS_AND_NAVIGATION, MEDICAL, MUSIC_AND_AUDIO, NEWS_AND_MAGAZINES, PARENTING, PERSONALIZATION, PHOTOGRAPHY, PRODUCTIVITY, SHOPPING, SOCIAL, SPORTS, TOOLS, TRAVEL_AND_LOCAL, VIDEO_PLAYERS, WEATHER"
     required: true
   apiKey:
     description: "API Key for the user"
