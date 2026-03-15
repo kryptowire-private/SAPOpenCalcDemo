@@ -2,7 +2,7 @@
 
 <img width="200" src="app/src/main/res/mipmap-xxxhdpi/ic_launcher_foreground.png" alt="OpenCalc" align="center">
 
-# OpenCalc
+# OpenCalc - SAP Test
 
 ### A simple and beautiful calculator for Android.
 #### Downloaded more than 250 000 times.
