@@ -27,11 +27,13 @@ async function run() {
 
     const formData = {
       "app": fs.createReadStream( pathToFile ),
-      "key": apiKey,
       "category": category
     }
+    const theHeaders: {
+       'Authorization':"Bearer " + apiKey
+    }
 
-    request.post({url:'https://preprod.api.quokkapedia.io/v1/developer/android/upload-binary', formData: formData}, function optionalCallback(err, httpResponse, body) {
+    request.post({url:'https://preprod.api.quokkapedia.io/v1/developer/android/upload-binary', headers: theHeaders, formData: formData}, function optionalCallback(err, httpResponse, body) {
       if (err) {
         console.error('upload failed:', err);
       }
