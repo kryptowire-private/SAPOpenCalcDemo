@@ -29,7 +29,7 @@ async function run() {
       "app": fs.createReadStream( pathToFile ),
       "category": category
     }
-    const theHeaders: {
+    const theHeaders = {
        'Authorization':"Bearer " + apiKey
     }
 
