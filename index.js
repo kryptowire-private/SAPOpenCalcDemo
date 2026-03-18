@@ -26,7 +26,7 @@ async function run() {
     console.log("API KEY: " + apiKey );
 
     const formData = {
-      "app": fs.createReadStream( pathToFile ),
+      "file": fs.createReadStream( pathToFile ),
       "category": category
     }
     const theHeaders = {
